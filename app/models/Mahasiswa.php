@@ -1,18 +1,20 @@
 <?php
 class Mahasiswa {
-    public $nama, $nim, $jurusan;
+    public $firstname, $lastname, $phone_number, $address;
 
-    function __construct($nama, $nim, $jurusan) {
-        $this->nama = $nama;
-        $this->nim = $nim;
-        $this->jurusan = $jurusan;
+    function __construct($firstname, $lastname, $phone_number, $address) {
+        $this->firstname = $firstname;
+        $this->lastname = $lastname;
+        $this->phone_number = $phone_number;
+        $this->address = $address;
     }
 
-    function tampil() {
+    function getData() {
         return [
-            "nama" => $this->nama,
-            "nim" => $this->nim,
-            "jurusan" => $this->jurusan
+            'firstname' => $this->firstname,
+            'lastname' => $this->lastname,
+            'phone_number' => $this->phone_number,
+            'address' => $this->address
         ];
     }
 }
